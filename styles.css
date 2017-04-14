@@ -13,11 +13,18 @@ h2{
   color: #FFF8F0;
 }
 section{
+  margin: 0px;
   padding-top:20px;
   padding-bottom:20px;
-  background-color:#11262E;
-}
+  background-color:#FEFEFF;
+  
+  
 
+}
+a{
+  text-decoration: none;
+  color:#C0C0C3;
+}
 #menu{
   background-color: #08090A;
   position:fixed;
@@ -44,13 +51,17 @@ section{
   padding:2%;
   margin-right:0;
   height: auto;
-  color:#C0C0C3;
+  color:#08090A;
   font-size: 1.5em;
+  text-align: left;
 }
+
 
 #about-image{
   border-radius:100%;
   vertical-align: top;
+  height:;
+  width:;
   padding: 50px;  
 }
 
@@ -61,7 +72,10 @@ height: auto;
 }
 hr{ 
   margin:0px;
+  padding:0px;
+  border-width: 0px;
   width:90%;
+  height: 0px;
 }
 
 #portfolio{
@@ -74,7 +88,7 @@ hr{
 .box{
   height: 200px;
   width:300px;
-  background-color:grey;
+  background-color:inherit;
   display: inline-block;
   margin:10px;
   vertical-align: middle;
@@ -124,6 +138,7 @@ input:focus, textarea:focus{
   /* to get rid of little highlight on active elements */
   outline: none;
   -moz-box-shadow:none;
+  color: #C0C0C3;
 }
 textarea{
   /* To properly align multiline text fields and their labels */
@@ -138,7 +153,7 @@ textarea{
   font-size: 20px;
   padding-top: 40px;
   padding-left: 140px;
-  color: #C0C0C3;
+  color: #08090A;
   width:500px;
 
 }
@@ -160,12 +175,14 @@ footer{
   background-image: url("http://learn.jquery.com/jquery-wp-content/themes/jquery/images/bg-footer-noise.jpg");
 }
 
-.btn-primary{
-  background-color:inherit;
+.btn-navi{
+  background-color:#08090A;
   border: none;
+  color: white;
 }
-.btn-primary:hover{
+.btn-navi:hover{
   background-color:#11262E;
+  color: white;
 }
 /* makes img adjust size to div*/
 img {

@@ -5,41 +5,46 @@
 	<title>Bashir Harrell</title>
 	<meta name="description" content="Personal Page">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 <body>
 	<div class="container-fluid">
   <!--Navbar here-->
   <nav>
 <div id="menu" align="middle">
- <a href="#about" class= "btn btn-primary">About</a>      
-<a href="#portfolio" class="btn btn-primary">Portfolio</a>
-<a href="#contact" class="btn btn-primary">Contact</a>
+ <a href="#about" class= "btn btn-navi">About</a>      
+<a href="#portfolio" class="btn btn-navi">Portfolio</a>
+<a href="#contact" class="btn btn-navi">Contact</a>
 </div>
   </nav>
 <!--end navbar, begin main content-->
 <main role = "main content">
 <section id="about"align="middle">
   <!--First Section "About"-->
-  <h2>About</h2><span><hr class="underline"></span><p class="inline" id="about_text">Linguist turned aspiring programmer currently discovering the world of front-end development with the intention on finding full-time work as a developer and in the longterm learning computational linguistics to combine my to greatest interests, language and technology.</p>
-  <img class="inline"id="about-image" src="http://68.media.tumblr.com/f0ee0b76e2d334da68e95f1cc0d3f5a8/tumblr_nz5pihdYP01u1kd45o1_1280.jpg" alt="Image of Bashir at Columbia University">
+  <h2>About</h2><span><hr class="underline"></span><p class="inline" id="about_text">Linguist and aspiring programmer currently discovering the world of front-end development with the intention on finding full-time work as a developer and in the longterm learning computational linguistics to combine my two greatest interests, language and technology. I also work as creative director for <a href="http://www.comapod.com">Comatose Podcast</a>. As such, my current portfolio consist of some of the weekly artwork I have made for the program. I will be removing them once I have enough things built to shocase my programming.
+  </p>
+  <img class="inline"id="about-image" src="images/Students_of_tc.jpg" alt="Image of Bashir at Columbia University">
 </section>
  <!--End "About section-->
  <!--Start "Portfolio Grid Section-->
-  <hr>
+
 <section id="portfolio" align="middle"><h2>Portfolio</h2><div align="right"><hr class="underline"></div>
   <!--Grid for Projects-->
   
-  <div class="box"><img src="http://loremflickr.com/320/240?random=1" /></div>
-  <div class="box"><img src="http://loremflickr.com/320/240?random=2" /></div>
-  <div class="box"><img src="http://loremflickr.com/320/240?random=3" /></div>
-  <div class="box"><img src="http://loremflickr.com/320/240?random=4" /></div>
+  <div class="box"><img src="images/Dividends.png"/></div>
+  <div class="box"><img src="images/Lonely Flower.png"/></div>
+  <div class="box"><img src="images/LoveLoss.png"/></div>
+  <div class="box"><img src="images/Finch.png"/></div>
+  <div class="box"><img src="images/TheLight.png"/></div>
+  <div class="box"><img src="images/chasingdream.png"/></div>
 <!--random photos are from http://loremflickr.com/-->
 </section>
  <!--End Portfolio section-->
-  <hr>
+  
  <!--Start Contact section-->
 <section id="contact"><h2>Contact</h2>
-  <form action="#" method="#"class="inline">
+  <form action="index.php" method="post" class= "inline">
     <div>
       <label for="name"></label>
       <input type="text" id="name" name="user_name" placeholder="Name">
