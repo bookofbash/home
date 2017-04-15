@@ -18,6 +18,7 @@ section{
   padding-bottom:20px;
   background-color:#FEFEFF;
 
+
   
 
 }
@@ -70,7 +71,7 @@ display: inline-block;
 width:40%;
 height: auto;
 }
-h/* Flaired edges, by Tomas Theunissen */
+/* Flaired edges, by Tomas Theunissen */
 
 .newhr hr{
     height: 30px;
@@ -78,9 +79,11 @@ h/* Flaired edges, by Tomas Theunissen */
     border-color: black;
     border-width: 1px 0 0 0;
     border-radius: 20px;
+
 }
 
 #portfolio{
+  padding-top:80px;
   height:auto;
   width:90%;
   margin-left:5%;
@@ -97,11 +100,15 @@ h/* Flaired edges, by Tomas Theunissen */
   
 }
 #contact{
+  padding-top:80px;
   height:auto;
-  width:100%;
   width:90%;
   margin-left:5%;
   margin-right:5%;
+}
+.wrapper{
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 form {
   /* place form where I want form on page */
@@ -140,7 +147,7 @@ input:focus, textarea:focus{
   /* to get rid of little highlight on active elements */
   outline: none;
   -moz-box-shadow:none;
-  color: #C0C0C3;
+  color: #08090A;
 }
 textarea{
   /* To properly align multiline text fields and their labels */
@@ -150,24 +157,24 @@ textarea{
 } 
 
 .contact-text{
-  display: inline-block;
   vertical-align: top;
+  display: inline-block;
   font-size: 20px;
-  padding-top: 40px;
-  padding-left: 140px;
+  padding-top: 0px;
+  padding-left: 20%;
   color: #08090A;
-  width:500px;
+  width:700px;
 
 }
 #social{
   display: inline;
-  height:auto;
-  
-  background-color: inherit;
-}
-ul {
   list-style-type: none;
+  padding-right: 20px;
+
+
 }
+
+
 footer{
   padding-top: 30px;
   height:80px;
@@ -184,7 +191,7 @@ footer{
 }
 .btn-navi:hover{
   background-color:#11262E;
-  color: white;
+  color: none;
 }
 /* makes img adjust size to div*/
 img {
@@ -200,13 +207,5 @@ img {
   margin-bottom: 20px
     
 }
+.
 
-.fa{
-  font-size:30px;
-  color:white;
-  margin:10px;
-  display: inline-block;
-}
-.fa:hover{
-  color: #C0C0C3;
-}
