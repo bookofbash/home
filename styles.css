@@ -17,6 +17,7 @@ section{
   padding-top:20px;
   padding-bottom:20px;
   background-color:#FEFEFF;
+  box-shadow: 5px 5px 5px 0px black;
 
 
   
@@ -61,9 +62,11 @@ a{
 #about-image{
   border-radius:100%;
   vertical-align: top;
-  height:;
-  width:;
-  padding: 50px;  
+  height:400px;
+  width:400px;
+  padding: none;  
+  box-shadow: 5px 5px 10px 2px  grey;
+
 }
 
 .inline{
