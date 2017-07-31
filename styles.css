@@ -6,8 +6,8 @@ body{
   -ms-text-size-adjust: auto;
  /*background image*/ 
   background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png");
-width:100%;
-height:auto;
+  width:100%;
+  height:auto;
 }
 
 main {
@@ -19,6 +19,7 @@ h2{
   padding-left: 2%;
 }
 section{
+  display: flex;
   margin: 0px;
   padding-top:20px;
   padding-bottom:20px;
@@ -56,7 +57,7 @@ section{
   background-image: url("images/banner_graphic.png");
   background-position: right;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: -2;
 }
 #title h1{
 
@@ -95,7 +96,7 @@ li  a{
   width:90%;
   margin-left:5%;
   margin-right:5%;
-  z-index: -1;
+  z-index: -2;
   
 }
 
@@ -147,22 +148,36 @@ li  a{
 }
 
 #portfolio{
+   position: relative;
   padding-top:80px;
   height:auto;
   width:90%;
   margin-left:5%;
   margin-right:5%;
   vertical-align:center;
- 
 }
+
+#artwork{
+   position: relative;
+  padding-top:80px;
+  height:auto;
+  width:90%;
+  margin-left:5%;
+  margin-right:5%;
+  vertical-align:center;
+  z-index: -2;
+}
+
 .box{
   position: relative;
-  display: flex;
-  height: 250px;
-  width:470px;
+  display: block;
+  height: inherit;
+  width: auto;
   background-color:inherit;
   display: inline-block;
-  margin:5px;
+  margin-left:15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
   vertical-align: center;
   
 }
@@ -177,8 +192,8 @@ li  a{
   color: #fff;
   visibility: hidden;
   opacity: 0;
-
   transition: opacity .2s, visibility .2s;
+
 }
 
 .box:hover .img-description {
