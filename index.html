@@ -1,33 +1,58 @@
-w<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bashir Harrell</title>
 	<meta name="description" content="Personal Page">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="home/font-awesome4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">	
 
 </head>
 <body>
 	<div class="container-fluid">
   <!--Navbar here-->
   <nav>
-<div id="menu" align="middle">
- <a href="#about" class= "btn btn-navi">About</a>      
-<a href="#portfolio" class="btn btn-navi">Portfolio</a>
-<a href="#contact" class="btn btn-navi">Contact</a>
-</div>
+    <div id="menu" align="middle">
+      <a href="#about" class= "btn btn-navi">About</a>      
+      <a href="#portfolio" class="btn btn-navi">Portfolio</a>
+      <a href="#contact" class="btn btn-navi">Contact</a>
+    </div>
   </nav>
 <!--end navbar, begin main content-->
-<main role = "main content">
-<section id="about"align="middle">
+  <main role = "main content">
+    
+    <section id="title">
+      <h1>Bashir</br>Harrell</h1>
+      <p>Front-end Developer</p>
+      <hr class="newhr">
+      <div class="row">
+        <div class="col">
+          <ul class ="social" align="middle">
+            <li><a href="http://twitter.com/bashtellastory"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+           <li><a href="http://linkedin.com/in/bashirharrell"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+           </li>
+            <li><a href="http://github.com/bookofbash"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  <section id="about">
   <!--First Section "About"-->
-  <h2>About</h2><span><hr class="underline"></span><p class="inline" id="about_text">Linguist and aspiring programmer currently discovering the world of front-end development with the intention on finding full-time work as a developer and in the longterm learning computational linguistics to combine my two greatest interests, language and technology. I also work as creative director for <a href="http://www.comapod.com">Comatose Podcast</a>. As such, my current portfolio consist of some of the weekly artwork I have made for the program. I will be removing them once I have enough things built to showcase my programming.
-  </p>
-  <img class="inline"id="about-image" src="images/Students_of_tc.jpg" alt="Image of Bashir at Columbia University">
-  <hr class="newhr">
-</section>
+    <div class="row">
+      <div class= "col-sm-4">
+        <h2>About</h2>
+      </div>
+      <div class="col-sm-8">
+        <p class="inline" id="about_text">Hi, I'm Bashir linguist and aspiring programmer currently living in Beijing, China discovering the world of front-end development with the intention on finding full-time work as a developer. I also work as creative director and digital artist for <a href="http://www.comapod.com">Comatose Podcast</a>. I have a strong interest in UX and UI and using data to bring to solve problems and make a differences, both large and small.</p>
+      </div>
+  </section>
+
+
  <!--End "About section-->
 
  <!--Start "Portfolio Grid Section-->
@@ -35,63 +60,52 @@ w<!doctype html>
 <section id="portfolio" align="middle"><h2>Portfolio</h2><div align="right"><hr class="underline"></div>
   <!--Grid for Projects-->
   
-  <div class="box"><img src="images/Dividends.png"/></div>
-  <div class="box"><img src="images/Lonely Flower.png"/></div>
-  <div class="box"><img src="images/LoveLoss.png"/></div>
+  <div class="box">
+    <a href="https://bookofbash.github.io/wikipediaviewer"><img src="images/wikipediaviewer.png"/></a>
+    <p class="img-description">Wikipededia Viewer made using the Wikipedia API</p>
+  </div>
+  <div class="box">
+    <a href="https://bookofbash.github.io/quotegenerator"><img src="images/quotegenerator.png"/></a>
+    <p class="img-description">Random Quote Generator made using the blablabla API</p>
+  </div>
+  <div class="box">
+    <a href="https://bookofbash.github.io/weatherapp"><img src="images/weatherapp.png"/></a>
+    <p class="img-description">Local Weather App made using the OpenWeather and Darksky API</p>
+  </div>
   <div class="box"><img src="images/Finch.png"/></div>
   <div class="box"><img src="images/TheLight.png"/></div>
   <div class="box"><img src="images/chasingdream.png"/></div>
-<!--random photos are from http://loremflickr.com/-->
+
   <hr class="newhr">
 </section>
  <!--End Portfolio section-->
 
  <!--Start Contact section-->
-<section id="contact"><h2>Contact</h2><hr class="underline"></span>
+<section id="contact">
+
 <div class="wrapper">
-  <form action="index.php" method="post" class= "inline">
-    <div>
-      <label for="name"></label>
-      <input type="text" id="name" name="user_name" placeholder="Name">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Contact</h2>
     </div>
-    <div>
-      <label for="mail"></label>
-      <input type="email" id="mail" name ="user_mail" placeholder="Email Address">
+    <div class="col-sm-8">
+      <p class="contact-text">If you would like to get in touch with me to talk about anything related to my expeience in linguistcs, what its like to live and work in Japan and China, or how my progress is going in programming, feel free to get in touch with me on social media.</p>
     </div>
-    <div>
-      <label for="msg"></label>
-      <textarea id="msg" name="user_message" placeholder="Message"></textarea>
-    </div>
-    <div class="button">
-      <button type="submit">Send</button>
-    </div>
-  </form>
-  <p class="contact-text">If you would like to get in touch with me to talk about anything related to my expeience in linguistcs, what its like to live and work in Japan and China, or how my progress is going in programming, feel free to send me a message or get in touch with me on social media.
-  <ul id ="social" align="middle">
-    <li><a href="http://twitter.com/bashtellastory"><img 
-    src="svg/twitter.svg" 
-    alt="twitter icon"
-    height="80px"
-    width="80px" 
-    /></a>
-    </li>
-    <li><a href="http://linkedin.com/in/bashirharrell"><img 
-    src="svg/linkedin.svg" 
-    alt="linkedin icon"
-    height="80px"
-    width="80px" 
-    /></a>
-    </li>
-      <li><a href="http://github.com/bookofbash"><img 
-    src="svg/github.svg" 
-    alt="github icon"
-    height="80px"
-    width="80px" 
-    /></a>
-    </li>
-  </ul>
-  </p>
-  </section>
+  </div>
+      <div class="row">
+        <div class="col">
+          <ul class ="social" align="middle">
+            <li><a href="http://twitter.com/bashtellastory"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+           <li><a href="http://linkedin.com/in/bashirharrell"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+           </li>
+            <li><a href="http://github.com/bookofbash"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>  
+    
+</section>
  <!--End Contact section-->
   </main>
 </div>
