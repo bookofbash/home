@@ -1,4 +1,7 @@
 
+html { 
+  font-size: 2vw; 
+}
 
 body{
   text-size-adjust: auto;
@@ -11,7 +14,8 @@ body{
 }
 
 main {
-  margin:15%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 h2{
@@ -24,7 +28,7 @@ section{
   padding-top:20px;
   padding-bottom:20px;
   background-color:#FEFEFF;
-  box-shadow: 5px 5px 5px 0px black;
+  box-shadow: 5px 5px 5px 0px grey;
  
 }
 
@@ -38,21 +42,19 @@ section{
   padding-top:15px;
   color:#FFF8F0; 
   box-shadow:0px 0px 3px 0px;
-  z-index: 0;
+  z-index: 10;
 }
 
 #menu .btn{
-  margin-left: 5%;
+  margin-left: 2%;
   margin-top: 20px;
 }
 
 #title{
   padding-top:50px;
   height:400px;
-  width:90%;
+  width:auto%;
   margin-top: 100px;
-  margin-left:5%;
-  margin-right:5%;
   font-size: 50px;
   background-image: url("images/banner_graphic.png");
   background-position: right;
@@ -93,9 +95,7 @@ li  a{
   position: relative;
   padding-top:100px;
   height:auto;
-  width:90%;
-  margin-left:5%;
-  margin-right:5%;
+  width:auto;
   z-index: -2;
   
 }
@@ -148,24 +148,22 @@ li  a{
 }
 
 #portfolio{
-   position: relative;
+  position: relative;
   padding-top:80px;
   height:auto;
-  width:90%;
-  margin-left:5%;
-  margin-right:5%;
+  width:auto;
+
   vertical-align:center;
+
 }
 
 #artwork{
    position: relative;
   padding-top:80px;
   height:auto;
-  width:90%;
-  margin-left:5%;
-  margin-right:5%;
+  width:auto;
   vertical-align:center;
-  z-index: -2;
+
 }
 
 .box{
@@ -204,9 +202,7 @@ li  a{
 #contact{
   padding-top:80px;
   height:auto;
-  width:90%;
-  margin-left:5%;
-  margin-right:5%;
+  width:auto;
 }
 .wrapper{
   padding-top: 80px;
