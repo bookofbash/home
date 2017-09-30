@@ -108,16 +108,16 @@ h2{
   text-decoration:none;
 }
 #wiki{
-  background-image:url('/Users/BashHome/web_projects/home/images/wikipediaviewer.png');  
+  background-image:url('https://image.ibb.co/kaNu3w/wikipediaviewer.png');  
 }
 #quote{
-  background-image:url('/Users/BashHome/web_projects/home/images/quotegenerator.png');  
+  background-image:url('https://image.ibb.co/mYewGG/quotegenerator.png');  
 }
 #weather{
-  background-image:url('/Users/BashHome/web_projects/home/images/weatherapp.png');  
+  background-image:url('https://image.ibb.co/jfoZ3w/weatherapp.png');  
 }
 #twitch{
-  background-image:url('https://bookofbash.github.io/twitchviewer/');  
+  background-image:url('https://image.ibb.co/fAwyVb/twitchviewer.png');  
 }
 
 .item-info{
