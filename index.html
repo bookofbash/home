@@ -5,90 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bashir Harrell</title>
 	<meta name="description" content="Personal Page">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">	
   <link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon">
-
+  <link href="https://fonts.googleapis.com/css?family=Eczar|Lato" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
-  <!--Navbar here-->
-  <nav>
-    <div id="menu" align="middle">
-      <a href="#about" class= "btn btn-navi">About</a>      
-      <a href="#portfolio" class="btn btn-navi">Web Projects</a>
-      <a href="#artwork" class="btn btn-navi"> Artwork</a>
-      <a href="#contact" class="btn btn-navi">Contact</a>
-    </div>
-  </nav>
-<!--end navbar, begin main content-->
-  <main role = "main content">
-    
-    <section id="title">
-      <h1>Bashir</br>Harrell</h1>
-      <p>Front-end Developer</p>
-      <hr class="newhr">
-      <div class="row">
-        <div class="col">
-          <ul class ="social" align="middle">
-            <li><a href="http://twitter.com/bashtellastory"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li>
-           <li><a href="http://linkedin.com/in/bashirharrell"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-           </li>
-            <li><a href="http://github.com/bookofbash"><i class="fa fa-github" aria-hidden="true"></i></a>
-            </li>
-          </ul>
+    <!--Navbar here-->
+    <nav>
+        <div id="menu" align="middle">
+          <a href="#about" class= "btn btn-navi">About</a>      
+          <a href="#portfolio" class="btn btn-navi">Web Projects</a>
+          <a href="#artwork" class="btn btn-navi"> Artwork</a>
+          <a href="#contact" class="btn btn-navi">Contact</a>
         </div>
-      </div>
-    </section>
-
+      </nav>
+    <!--end navbar, begin main content-->
+	<div class="container-fluid">
+    <main role = "main content">
+      
+      <!--First Section "About"-->
   <section id="about">
-  <!--First Section "About"-->
-    <div class="row">
-      <div class= "col-sm-4">
-        <h2>About</h2>
-      </div>
-      <div class="col-sm-8">
-        <p class="inline" id="about_text">Hi, I'm Bashir linguist and aspiring programmer currently living in Beijing, China discovering the world of front-end development with the intention on finding full-time work as a developer. I also work as creative director and digital artist for <a href="http://www.comapod.com">Comatose Podcast</a>. I have a strong interest in UX and UI and using data to bring to solve problems and make a differences, both large and small.</p>
-      </div>
+        <div>
+            <h2>Hello World!</h2>
+            <p class="inline" id="about_text">  I'm Bashir, a linguist and programmer currently living in Beijing, China discovering the world of web development with the intention on finding full-time work as a developer. I also work as creative director and digital artist for <a href="http://www.comapod.com">Comatose Podcast</a>. I have a strong interest in UX and UI and using data to solve problems and make a differences, both large and small.</p>
+        </div>
+    </div>
   </section>
-
-
  <!--End "About" section-->
 
  <!--Start "Web Projects" section -->
 
-<section id="portfolio" align="middle"><h2>Web Projects</h2><div align="right"><hr class="underline"></div>
-  
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="box">
-        <a href="https://bookofbash.github.io/wikipediaviewer"><img src="images/wikipediaviewer.png"/></a>
-        <a href="https://bookofbash.github.io/wikipediaviewer"><p class="img-description">Wikipededia Viewer made using the Wikipedia API</p></a>
-      </div>
+ <section id="portfolio" align="middle">
+  <h2>Web Projects</h2>
+  <div class="projects">
+    <div class="item"id="wiki">	
+      <a href="https://bookofbash.github.io/wikipediaviewer/">		
+        <div class="item-info">
+          <h2>Wikipedia Viewer</h2>
+          <span> JavaScript/jQuery/Bootstrap</span>
+        </div>
+    </a>	
+    </div>		
+    <div class="item"id="quote">		
+      <a href="https://bookofbash.github.io/quotegenerator">
+        <div class="item-info">
+          <h2>Random Quote Generator</h2>
+          <span> JavaScript/jQuery/Bootstrap</span>
+        </div>
+      </a>	
     </div>
-    <div class="box">
-      <a href="https://bookofbash.github.io/quotegenerator"><img src="images/quotegenerator.png"/></a>
-      <a href="https://bookofbash.github.io/quotegenerator"><p class="img-description">Random Quote Generator made using the http://quotes.stormconsultancy.co.uk API</p></a>
+    <div class="item" id="twitch">
+      <a href="https://bookofbash.github.io/twitchviewer">					
+        <div class="item-info">
+          <h2>Twitchio!</h2>
+          <span> JavaScript/jQuery/Bootstrap</span>
+        </div>	
+      </a>
+    </div>		
+    <div class="item"id="weather">			
+      <a href="https://bookofbash.github.io/weatherapp">
+        <div class="item-info">
+          <h2>Local Weather App</h2>
+          <span> JavaScript/jQuery/Bootstrap</span>
+        </div>
+      </a>	
     </div>
-    <div class="box">
-      <a href="https://bookofbash.github.io/weatherapp"><img src="images/weatherapp.png"/></a>
-      <a href="https://bookofbash.github.io/weatherapp"><p class="img-description">Local Weather App made using the OpenWeather and Darksky APIs</p></a>
-    </div>
-  </div>
-  <hr class="newhr">
-</section>
+
+    
+ </section>
 <!-- Artwork goes here-->
-<section id="artwork" align="middle"><h2>Artwork</h2><div align="right"><hr class="underline"></div>
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="box"><img src="images/Finch.png"/></div>
-      <div class="box"><img src="images/TheLight.png"/></div>
-      <div class="box"><img src="images/chasingdream.png"/></div>
-    </div>
-  </div>
-  <hr class="newhr">
+<section id="artwork" align="middle">
+    <h2>Artwork</h2>
+    <div class="artwork">
+      <div class="item"><img src="images/Finch.png"/></div>		
+      <div class="item"><img src="images/TheLight.png"/></div>
+      <div class="item"><img src="images/chasingdream.png"/></div>
+      <div class="item"><img src="images/chicken.png"/></div>
+      <div class="item"><img src="images/DyingRose.png"/></div>		
+      <div class="item"><img src="images/earhart.png"/></div>		
+      <div class="item"><img src="images/Lincoln.png"/></div>		
+      <div class="item"><img src="images/LonelyFlower.png"/></div>		
+      <div class="item"><img src="images/MicCheck.png"/></div>		
+      <div class="item"><img src="images/Prometheus.png"/></div>						
+	  </div>
 </section>
  <!--End Portfolio section-->
 
@@ -98,7 +101,6 @@
 <div class="wrapper">
   <div class="row">
     <div class="col-sm-4">
-      <h2>Contact</h2>
     </div>
     <div class="col-sm-8">
       <p class="contact-text">If you would like to get in touch with me to talk about anything related to my expeience in linguistcs, what its like to live and work in Japan and China, or how my progress is going in programming, feel free to get in touch with me on social media.</p>

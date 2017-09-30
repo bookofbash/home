@@ -4,127 +4,77 @@ html {
 }
 
 body{
-  text-size-adjust: auto;
+  -ms-text-size-adjust: auto;
   -webkit-text-size-adjust:auto;
   -ms-text-size-adjust: auto;
- /*background image*/ 
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png");
   width:100%;
   height:auto;
 }
-
-main {
-  margin-right: 5%;
-  margin-left: 5%;
+.container-fluid{
+  padding:0em,10em;
 }
+
+
 
 h2{
   color: #FFF8F0;
-  padding-left: 2%;
-}
-section{
-  display: flex;
-  margin: 0px;
-  padding-top:20px;
-  padding-bottom:20px;
-  background-color:#FEFEFF;
-  box-shadow: 5px 5px 5px 0px grey;
- 
+  padding-left: .25em;
+  font-style: bold;
 }
 
 #menu{
   background-color: #08090A;
-  position:fixed;
+  position: fixed;
   top:0;
   left:0;
-  height: 100px;
+  height: auto;
   width: 100%;
-  padding-top:15px;
+  padding-bottom:2em;
   color:#FFF8F0; 
-  box-shadow:0px 0px 3px 0px;
   z-index: 10;
+}
+#menu a{
+  font-size: 2em;
 }
 
 #menu .btn{
-  margin-left: 2%;
-  margin-top: 20px;
+  position: static;;
+  margin-left: 2rem;
+  margin-top: 1.5em;
 }
 
-#title{
-  padding-top:50px;
-  height:400px;
-  width:auto%;
-  margin-top: 100px;
-  font-size: 50px;
-  background-image: url("images/banner_graphic.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  z-index: -2;
-}
-#title h1{
-
-  font-size: 60px;
-  color:white;
-  margin-left: 3%;
-
+.btn-navi{
+  background-color:#08090A;
+  border: none;
+  color: white;
+  font-size: 2em;
 }
 
-#title p{
-  font-size: 30px;
-  color:white;
-  margin-left: 3%;
-  margin-bottom: 5px;
+.btn-navi:hover{
+  background-color:white;
+  color: black;
 }
 
-.social{
-  display: inline-flex;
-  list-style-type: none;
-  padding-right: 20px;
-  color:white;
-}
-
-li  a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-#about{
-  position: relative;
-  padding-top:100px;
-  height:auto;
-  width:auto;
-  z-index: -2;
-  
+#about {
+  padding-top:12em;
+  display: flex; display: -webkit-flex;
+  flex-direction: row; -webkit-flex-direction: row;
+  flex-wrap: wrap; -webkit-flex-wrap: wrap;
+  justify-content: center; -webkit-justify-content: center;
+  width:100%;
+  margin:0 auto;
 }
 
 #about_text{
   width: 100%;
   background-color:inherit;
-  display:block;
-  padding-left: 2%;
+  padding-left: 1rem;
   height: auto;
   color:#08090A;
   font-size: 1.5em;
   text-align: left;
-  vertical-align: left;
-  padding-right: 5%;
-}
-
-
-#about-image{
-  border-radius:100%;
-  vertical-align: top;
-  height:300px;
-  width:300px;
-  padding: none;  
-  box-shadow: 5px 5px 10px 2px  grey;
-}
-#about h2 {
-  text-align: center;
-  margin-right: 5%;
+  padding-right: 2.5em;
+  font-family: 'Lato', sans-serif;
 }
 
 #about a{
@@ -136,67 +86,87 @@ li  a{
   color:orange;
 }
 
-/* Flaired edges, by Tomas Theunissen */
 
-.newhr hr{
-    height: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
 
+/* PORTFOLIO GRID */
+.projects{
+  display: flex; display: -webkit-flex;
+  flex-direction: row; -webkit-flex-direction: row;
+  flex-wrap: wrap; -webkit-flex-wrap: wrap;
+  justify-content: center; -webkit-justify-content: center;
+  width:100%;
+  margin:0 auto;
 }
 
-#portfolio{
-  position: relative;
-  padding-top:80px;
-  height:auto;
-  width:auto;
+.projects .item{
+  background-size:cover;
+  background-position:center center;
+  min-height:250px;
+  min-width:400px;
+}
+.projects .item a{
+  text-decoration:none;
+}
+#wiki{
+  background-image:url('/Users/BashHome/web_projects/home/images/wikipediaviewer.png');  
+}
+#quote{
+  background-image:url('/Users/BashHome/web_projects/home/images/quotegenerator.png');  
+}
+#weather{
+  background-image:url('/Users/BashHome/web_projects/home/images/weatherapp.png');  
+}
+#twitch{
+  background-image:url('/Users/BashHome/web_projects/home/images/twitchviewer.png');  
+}
 
-  vertical-align:center;
+.item-info{
+  background:rgba(0,0,0,0.6);
+  display: flex; display: -webkit-flex;
+  flex-direction: column; -webkit-flex-direction: column;
+  flex-wrap: wrap; -webkit-flex-wrap: wrap;
+  justify-content: center; -webkit-justify-content: center;
+  align-items: center; -webkit-align-items: center;
+  min-width:400px;
+  min-height:250px;
+  max-width: 400px;
+}
 
+.item-info h2{
+  font-weight:900;
+  color:#ffffff;
+}
+
+.item-info span{
+  color:#cfcfcf;
+  font-family:Arial;
+  font-style:italic;
+  font-size:0.9em;
+  padding-top:5px;
 }
 
 #artwork{
-   position: relative;
+  position: relative;
   padding-top:80px;
   height:auto;
   width:auto;
   vertical-align:center;
-
 }
 
-.box{
-  position: relative;
-  display: block;
-  height: inherit;
-  width: auto;
-  background-color:inherit;
-  display: inline-block;
-  margin-left:15%;
-  margin-right: 15%;
-  margin-bottom: 5%;
-  vertical-align: center;
-  
+.artwork{
+  display: flex; display: -webkit-flex;
+  flex-direction: row; -webkit-flex-direction: row;
+  flex-wrap: wrap; -webkit-flex-wrap: wrap;
+  justify-content: center; -webkit-justify-content: center;
+  width:100%;
+  margin:0 auto;
 }
 
-.img-description{
-  position: absolute;
-  top:0;
-  bottom:0;
-  left: 0;
-  right: 0;
-  background:rgba(29, 106, 156, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-
-}
-
-.box:hover .img-description {
-  visibility: visible;
-  opacity: 1;
+.partwork .item{
+  background-size:cover;
+  background-position:center center;
+  min-height:400px;
+  min-width:400px;
 }
 
 #contact{
@@ -209,13 +179,9 @@ li  a{
   padding-bottom: 80px;
 }
 
-#contact h2 {
-  text-align: center;
-  margin-right: 5%;
-}
 
 .contact-text{
-  width: 100%;
+  width: 50%;
   background-color:inherit;
   display:block;
   padding-left: 2%;
@@ -224,18 +190,23 @@ li  a{
   color:#08090A;
   font-size: 1.5em;
   text-align: left;
-  vertical-align: left;
+  font-family: 'Lato', sans-serif;
+
 
 }
 
 #contact .social a{
   display: inline-flex;
-  list-style-type: none;
+  list-style: none;
   padding-right: 20px;
   color:black;
-  font-size: 2em;
+  font-size: 3em;
 }
 
+#contact .social a :hover{
+border:solid;
+border-color:black;
+}
 
 footer{
   padding-top: 30px;
@@ -245,29 +216,3 @@ footer{
   text-align: center;
   background-image: url("http://learn.jquery.com/jquery-wp-content/themes/jquery/images/bg-footer-noise.jpg");
 }
-
-.btn-navi{
-  background-color:#08090A;
-  border: none;
-  color: white;
-}
-.btn-navi:hover{
-  background-color:white;
-  color: black;
-}
-/* makes img adjust size to div*/
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-/* hr that underlines titles */
-.underline{
-  border-color:#C0C6C3;
-  border-top:solid;
-  background-color:#C0C0C3;
-  width: 33%;
-  margin-bottom: 20px
-    
-}
-
-
