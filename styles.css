@@ -3,6 +3,7 @@ html {
   font-size: 2vw; 
   font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
+  background-color: white;
 }
 
 body{
@@ -12,6 +13,7 @@ body{
   overflow-x: hidden;
   width:100%;
   height:auto;
+
 }
 .container-fluid{
   padding:0em,10em;
@@ -27,6 +29,7 @@ h2{
 
 #menu{
   background-color: #08090A;
+  opacity: 0.95;
   position: fixed;
   top:0;
   left:0;
@@ -111,18 +114,6 @@ h2{
 .projects .item a{
   text-decoration:none;
 }
-#wiki{
-  background-image:url('https://image.ibb.co/kaNu3w/wikipediaviewer.png');  
-}
-#quote{
-  background-image:url('https://image.ibb.co/mYewGG/quotegenerator.png');  
-}
-#weather{
-  background-image:url('https://image.ibb.co/jfoZ3w/weatherapp.png');  
-}
-#twitch{
-  background-image:url('https://image.ibb.co/fAwyVb/twitchviewer.png');  
-}
 
 #artwork{
   position: relative;
@@ -189,7 +180,8 @@ footer{
   padding-top: 30px;
   height:80px;
   width:100%;
-  color: #FFF8F0;
+
+  color: black;
   text-align: center;
-  background-image: url("https://learn.jquery.com/jquery-wp-content/themes/jquery/images/bg-footer-noise.jpg");
+  background-color: inherit;
 }
