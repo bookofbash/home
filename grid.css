@@ -30,6 +30,7 @@ header {
 }
 .card {
   background: white;
+  border-radius: 10px;
   text-decoration: none;
   color: #444444 box-shadow 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -37,16 +38,22 @@ header {
   min-height: 100%;
   position: relative;
   top: 0;
-  transition: all .1s ease-in; }
+  transition: all .1s ease-in; 
+}
   .card:hover {
     top: -2px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); 
+    text-decoration: none;
+  }
+    
   .card article {
     padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between; 
+  }
+
   .card h1 {
     font-size: 20px;
     margin: 0;
@@ -64,6 +71,7 @@ header {
     margin: 2em 0 0 0; }
   .card .thumb {
     padding-bottom: 60%;
+    border-radius: 10px 10px 0px 0px ;
     background-size: cover;
     background-position: center center; }
 

@@ -136,25 +136,9 @@ h2{
 
 #portfolio{
   padding-top:100px;
-  
 }
-.projects{
-  display: flex; display: -webkit-flex;
-  flex-direction: row; -webkit-flex-direction: row;
-  flex-wrap: wrap; -webkit-flex-wrap: wrap;
-  justify-content: center; -webkit-justify-content: center;
-  width:100%;
-  margin:0 auto;
-}
-
-.projects .item{
-  background-size:cover;
-  background-position:center center;
-  min-height:250px;
-  min-width:400px;
-}
-.projects .item a{
-  text-decoration:none;
+#portfolio .item{
+  border-radius: 10px;
 }
 
 #artwork{
