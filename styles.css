@@ -4,6 +4,8 @@ html {
   font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   background-color: white;
+  scroll-behavior: smooth;
+
 }
 
 body{
@@ -131,6 +133,11 @@ h2{
 
 
 /* PORTFOLIO GRID */
+
+#portfolio{
+  padding-top:100px;
+  
+}
 .projects{
   display: flex; display: -webkit-flex;
   flex-direction: row; -webkit-flex-direction: row;
@@ -152,7 +159,7 @@ h2{
 
 #artwork{
   position: relative;
-  padding-top:80px;
+  padding-top:100px;
   height:auto;
   width:auto;
   vertical-align:center;
