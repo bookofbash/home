@@ -13,7 +13,42 @@ body{
   overflow-x: hidden;
   width:100%;
   height:auto;
+  -moz-animation: fadein 2s; 
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s; 
 
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { 
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { 
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { 
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 .container-fluid{
   padding:0em,10em;
@@ -66,7 +101,7 @@ h2{
   display: flex; display: -webkit-flex;
   flex-direction: row; -webkit-flex-direction: row;
   flex-wrap: wrap; -webkit-flex-wrap: wrap;
-  justify-content: center; -webkit-justify-content: center;
+  justify-content: left; -webkit-justify-content: center;
   width:95%;
   margin:0 auto;
 }
@@ -80,7 +115,7 @@ h2{
   height: auto;
   color:#08090A;
   font-size: 1.5em;
-  text-align: center;
+  text-align: left;
   padding-right: 1rem;
 
 }
