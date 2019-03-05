@@ -31,8 +31,9 @@
           <a href="#portfolio" class="btn btn-navi">Web Projects</a>
           <a href="#artwork" class="btn btn-navi"> Artwork</a>
           <a href="#contact" class="btn btn-navi">Contact</a>
-        </div>
-      </nav>
+          <!-- <button id = "chiButton" display="none">Chinese</button>
+        </div> -->
+    </nav>
     <!--end navbar, begin main content-->
 	<div class="container-fluid">
     <main role = "main content">
@@ -40,7 +41,18 @@
       <!--First Section "About"-->
   <section id="about">
         <div>
-            <p class="inline" id="about_text">  My name is Bashir. I am a self-taught Frontend Developer from the United States currently living in Beijing, China.  When I am not tinkering around on the computer, I enjoy traveling with my lovely wife and learning new languages. I am a native Enlglish speaker and also speak Japanese and Chinese (Mandarin). I want to try Spanish next. I love learning new things and am always looking for a new challenge. I push myself to learn something new everyday, and always enjoy sharing my knowledge with others. I am currently working on building my skills in React.js.</p>
+            <p class="inline" id="about_text">  
+                <span class='english'> My name is Bashir. I am a self-taught Frontend Developer 
+                                    from the United States currently living in Beijing, China. I am proficient in Javascript/HTML/CSS and I have experience with React.js jQuery, Node.js and Express. When I am not tinkering around on the computer, 
+                                    I enjoy traveling with my lovely wife and learning new languages. I am a native Enlglish speaker and also speak
+                                    Japanese and Chinese (Mandarin). I love learning new things and am always looking for 
+                                    a new challenge. I push myself to learn something new everyday, and always enjoy sharing my knowledge with others. 
+                                    I am currently working on building my skills in React.js. Please contact me if you think I would be a good fit for your project or team.
+                </span>
+                <span  class= 'chinese noDisplay'>我叫 Bashir. 我是个从美国来的住在北京的自学前端开发人员。不在电脑前面的时候我喜欢跟我的妻子理由也喜欢学习新语言。我的母语是英语，我会说日语和中文。我想接下来学习西班牙语. 
+                    我喜欢学习新事物，并且总是在寻找挑战。每天学习新事物， 每天f分享我的知识。我目前正致力于在React.js中构建我的技能。
+                </span>
+            </p>
         </div>
     </div>
   </section>
@@ -50,7 +62,10 @@
 
 
  <section id="portfolio" align="middle">
-  <h2>Web Projects</h2>
+  <h2>
+      <span class='english'>Web Projects</span>
+      <span class='chinese noDisplay'>网络APP</span>
+    </h2>
   <div class="band">
         <!-- <div class="item-8">
                 <a
@@ -72,7 +87,10 @@
               </div>
               <article>
                 <h1>Design Quotes</h1>
-                <p>Quote generator made using React, SASS, and QuotesOnDesign API</p>
+                <p>
+                    <span class='english'>Quote generator made using React, SASS, and QuotesOnDesign API.</span>
+                    <span class='chinese noDisplay'>用React.js SASS, 和 QuotesOnDesign API 引文发生器</span>
+                </p>
               </article>
            </a>
       </div>
@@ -84,7 +102,10 @@
               </div>
               <article>
                 <h1>Random Name Generator</h1>
-                <p>Random Name Generator made using jQuery ResponsiveVoice.js and the BehindtheName API</p>
+                <p>
+                    <span class='english'>Made using jQuery ResponsiveVoice.js and the BehindtheName API.</span>
+                    <span class='chinese noDisplay'>用jQuery, ResponsiveVoice.js 和 BehindtheName API 的随机名字生成器  </span>
+                </p>
               </article>
            </a>
       </div>
@@ -95,8 +116,11 @@
               <div class="thumb" style="background-image:url(images/todolist.jpg)">
               </div>
               <article>
-                  <h1>To-Do List</h1>
-                  <p>To-Do List made using jQuery and Font-Awesome Firebase Realtime Database & Authentication</p>
+                  <h1>To-Do List<span class='chinese noDisplay'>待办事项清单</span></h1>
+                    <p>
+                        <span class='english'>Made using jQuery and Font-Awesome Firebase Realtime Database & Authentication.</span>
+                        <span class='chinese noDisplay'>用jQuery, FontAwesome, & Google Firebase 数据库和认证的待办事项列表</span>
+                    </p>
               </article>
            </a>
       </div>
@@ -108,7 +132,10 @@
                 </div>
                 <article>
                     <h1>SoundColor</h1>
-                    <p>Patatap clone made using paper.js and howler.js</p>
+                        <p>
+                            <span class='english'>Patatap clone made using paper.js and howler.js.</span>
+                            <span class='chinese noDisplay'></span>
+                        </p>
                 </article>
              </a>
         </div>
@@ -116,11 +143,14 @@
             <a
             href="https://bookofbash.github.io/weatherapp/"
             class="card">
-                <div class="thumb" style="background-image:url(images/weatherapp.jpg)"><!--Photo by Meriç Dağlı on Unsplash-->
+                <div class="thumb" style="background-image:url(images/weatherapp.jpg)">
                 </div>
                 <article>
                     <h1>Local Weather</h1>
-                    <p>Web app made using jQuery,JSON, Free Geo IP, DarkSky and Skycons</p>
+                    <p>
+                        <span class='english'>Web app made using jQuery,JSON, Free Geo IP, DarkSky and Skycons.</span>
+                        <span class='chinese noDisplay'>用jQuery，JSON， Free Geo IP, DarkSky 和 Skycons 的网络APP</span>
+                    </p>
                 </article>
              </a>
         </div>
@@ -131,8 +161,11 @@
               </div>
               <article>
                   <h1>Random Quote Generator</h1>
-                  <p>Random Quote Generator
-                      This random quote generator was made using the Twitter API. Users can click to get a random quote and tweet it.</p>
+                  <p>
+                        <span class='english'>This random quote generator was made using the Twitter API. Users can click to get a random quote and tweet it.</span>
+                        <span class='chinese noDisplay'>用Twitter API的 引文发生器</span>
+
+                  </p>
               </article>
           </a>
       </div>
@@ -143,8 +176,10 @@
           </div>
           <article>
               <h1>Wikipedia Viewer</h1>
-              <p>A web app made using the wikipedia API for viewing the top 10 results of a wikipedia search
-              </p>
+                <p>
+                    <span class='english'>A web app made using the Wikipedia API for viewing the top 10 results of a wikipedia search.</span>
+                    <span class='chinese noDisplay'>用Wikipedia API的 APP</span>
+                </p>
           </article>
           </a>
       </div>
@@ -155,8 +190,10 @@
             </div>
             <article>
                 <h1>Twitch Viewer</h1>
-                <p>Web app made using the Twitch API to display which streams are currently online.
-                </p>
+                    <p>
+                        <span class='english'>Web app made using the Twitch API to display which streams are currently online.</span>
+                        <span class='noDisplay chinese'>用Twitch API的 APP. 用户能看 直播在线态度。</span>
+                    </p>
             </article>
         </a>
       </div>
@@ -167,16 +204,31 @@
                 </div>
                 <article>
                     <h1>Color Picker</h1>
-                    <p>RGB Color picker game made with vanilla JS
-                    </p>
+                        <p>
+                            <span class='english'>RGB Color picker game made with vanilla JS.</span>
+                            <span class='chinese noDisplay'>用JavaScript的RGB Color Picker 游戏. </span>
+                        </p>
                 </article>
             </a>
       </div>
+      <div class="item-10 animated fadeInLeftBig">
+        <a href="https://codepen.io/bookofbash/full/pQqgJz" 
+        class="card">
+            <div class="thumb" style="background-image: url(images/ride_on.jpg)">
+            </div>
+            <article>
+                <h1>Ride in Style</h1>
+                    <p>
+                        <span class='english'>Product landing page made using CSS and HTML5.</span>
+                        <span class='chinese noDisplay'>用HTML5和CSS的登陆页面. </span>
+                    </p>
+            </article>
+        </a>
       </div>
     </div>
  </section>
 <!-- Artwork goes here-->
-<section id="artwork" align="middle">
+<section id="artwork" align="center">
     <h2>Artwork</h2>
     <div class="artwork">
       <div class="item-art"><img src="images/Finch.png"/></div>		

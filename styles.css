@@ -211,3 +211,12 @@ footer{
   text-align: center;
   background-color: inherit;
 }
+
+.noDisplay {
+  display : none;
+}
+
+#chiButton{
+  color: black;
+  background-color: #FFF8F0;
+}
