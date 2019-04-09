@@ -65,7 +65,7 @@ h2{
 }
 
 #menu{
-  background-color: #08090A;
+  background-color: rgb(39, 6, 85);
   opacity: 0.95;
   position: fixed;
   top:0;
@@ -87,7 +87,7 @@ h2{
 }
 
 .btn-navi{
-  background-color:#08090A;
+  background-color: rgb(39, 6, 85);
   border: none;
   color: white;
   font-size: 2em;
