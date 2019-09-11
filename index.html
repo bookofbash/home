@@ -26,7 +26,7 @@
 <body>
     <!--Navbar here-->
     <nav>
-        <div id="menu" align="middle">
+        <div id="menu" align="middle" class="animated bounce">
           <a href="#about" class= "btn btn-navi">About</a>      
           <a href="#portfolio" class="btn btn-navi">Web Projects</a>
           <a href="#artwork" class="btn btn-navi"> Artwork</a>
@@ -246,16 +246,16 @@
 <section id="artwork" align="center">
     <h2>Artwork</h2>
     <div class="artwork">
-      <div class="item-art"><img src="images/Finch.png"/></div>		
-      <div class="item-art"><img src="images/TheLight.png"/></div>
-      <div class="item-art"><img src="images/chasingdream.png"/></div>
-      <div class="item-art"><img src="images/chicken.png"/></div>
-      <div class="item-art"><img src="images/DyingRose.png"/></div>		
-      <div class="item-art"><img src="images/earhart.png"/></div>		
-      <div class="item-art"><img src="images/Lincoln.png"/></div>		
-      <div class="item-art"><img src="images/LonelyFlower.png"/></div>		
-      <div class="item-art"><img src="images/MicCheck.png"/></div>		
-      <div class="item-art"><img src="images/Prometheus.png"/></div>						
+      <div class="item-art"><img class="art" data-src="./images/Finch.png"/></div>		
+      <div class="item-art"><img class="art" data-src="./images/TheLight.png"/></div>
+      <div class="item-art"><img class="art" data-src="./images/chasingdream.png"/></div>
+      <div class="item-art"><img class="art" data-src="./images/chicken.png"/></div>
+      <div class="item-art"><img class="art" data-src="./images/DyingRose.png"/></div>		
+      <div class="item-art"><img class="art" data-src="./images/earhart.png"/></div>		
+      <div class="item-art"><img class="art" data-src="./images/Lincoln.png"/></div>		
+      <div class="item-art"><img class="art" data-src="./images/LonelyFlower.png"/></div>		
+      <div class="item-art"><img class="art" data-src="./images/MicCheck.png"/></div>		
+      <div class="item-art"><img class="art" data-src="./images/Prometheus.png"/></div>						
 	  </div>
 </section>
  <!--End Portfolio section-->
@@ -284,7 +284,13 @@
 <footer>
   Created by Bashir Harrell
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+<script>
+  const lazyLoad = new LazyLoad({
+    elements_selector: ".art"
+  })
 
+</script>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
